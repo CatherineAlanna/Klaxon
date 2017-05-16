@@ -1,3 +1,3 @@
 # README
 
-Welcome to WarrenAlanna a freelance brand development and web design company located in Seattle, WA. 
+Welcome to Klaxon a t-shirt and accessories company created by two graphic designers that make silly stuff. 
