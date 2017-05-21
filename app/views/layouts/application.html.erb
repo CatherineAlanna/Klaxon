@@ -2,25 +2,75 @@
 <html>
   <head>
     <title>Nameofapp</title>
-    <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-  	<nav>
-  		<ul>
-  			<li>Home</li>
-  			<li>About</li>
-  			<li>Contact</li>
-  		</ul>
+  	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top navbar-color-on-scroll" id="sectionsNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle Navigations</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <nav class="projectName navbar-brand">
+            <a href="#">Klaxon</a>
+          </nav>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right" id="nav-links">
+            <li><a href="#">Mens</a></li>
+            <li><a href="#">Womens</a></li>
+            <li><a href="#">Goods</a></li>
+          </ul>
+        </div>
+      </div>
   	</nav>
 
     <%= yield %>
 
     <footer>
-    	&copy; 2015 WarrenAlanna
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-4" id="Social">
+              <h5>Get Social</h5>
+              <p>Klaxon was created by two graphic designers during date night.</p>
+            </div>
+            <div class="col-md-4" id="Instagram">
+              <h5>Instagram Feed</h5>
+              <div class="gallery-feed">
+                <img src="Blue-Wmn-Social.png">
+              </div>
+            </div>
+            <div class="col-md-4" id="News">
+              <h5>Get the Newsletter</h5>
+              <p>We promise to only send exciting things.</p>
+              <form id="email_signup_footer">
+                <input type="email" name="email" class="validate_email" placeholder="your email address">
+                <button type="submit" class="submit_button">Sign Up</button>
+              </form>
+            </div>
+          </div>
+        <hr>
+          <ul class="navigation pull-left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="copyright pull-right">
+          &copy; 2017 Klaxon
+        </div>
+      </div>
     </footer>
   </body>
 </html>

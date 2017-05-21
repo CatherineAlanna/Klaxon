@@ -1,3 +1,104 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+	box-sizing: border-box;
+}
+
+$font-stack: Roboto, Helvetica, Arial, sans-serif;
+$primary-color: #a57777;
+$background-color: #3C4858;
+
+body {
+	background-color: lightgrey;
+	color: #333333;
+	padding-top: 90px;
+	display: block;
+	text-rendering: optimizeLegibility;
+}
+
+.navbar {
+		position: relative;
+		background-color: white;
+		box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
+		height: 70px;
+		position: fixed;
+
+	ul li {
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+}
+
+.projectName a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.navbar-inverse {
+		border-color: white;
+	}
+
+.navbar-inverse .navbar-nav li a {
+	color: #777;
+	padding-top: 20px;
+}
+
+.projectName {
+		font-size: 2em;
+		text-decoration: none;
+		padding-top: 20px;
+	}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.projectName a {
+	color: #777;}
+
+
+
+footer {
+	padding: 30px;
+	background-color: $background-color;
+	color: white;
+	font-size: 14px;
+	line-height: 1.5em;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	ul li a {
+		padding: 15px 15px 15px 0px;
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	ul li a:hover {
+		color: black;
+		text-decoration: none;
+	}
+
+	.submit_button  {
+		color: #3C4858;
+		font-weight: 400;
+	}
+
+	.validate_email {
+		padding-left: 5px;
+	}
+}
+
+.content ul li {
+	display: inline-block;
+}
+
+.content ul li a {
+	color: white;
+}
