@@ -2,10 +2,16 @@
 <html>
   <head>
     <title>Klaxon</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
   </head>
@@ -13,8 +19,7 @@
   <body>
     <nav class="navbar navbar-inverse" id="top-nav">
       <div class="container">
-        <img class="brand" src="assets/klaxon-logo.png" alt="Klaxon Logo">
-
+        <%= image_tag("Klaxon-Logo.png", class: "img-responsive", alt: "Klaxon Logo") %>
         <div class="navbar-header" id="hamburger">
           <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle Navigations</span>
@@ -25,18 +30,18 @@
         </div><!--end hamburger-->
 
         <div class="collapse navbar-collapse" id="main-nav">
-        <ul class="nav navbar-nav navbar-left" id="nav-links">
-          <li id="Mens">
-            <a href="#">Mens</a>
-          </li>
-          <li id="Womens">
-            <a href="#">Womens</a>
-          </li>
-          <li id="Goods">
-            <a href="#">Goods</a>
-          </li>
-        </ul>
-      </div><!--end main nav-->
+          <ul class="nav navbar-nav navbar-left" id="nav-links">
+            <li id="Mens">
+              <a href="#">Mens</a>
+            </li>
+            <li id="Womens">
+              <a href="#">Womens</a>
+            </li>
+            <li id="Goods">
+              <a href="#">Goods</a>
+            </li>
+          </ul>
+        </div><!--end main nav-->
       </div><!--end container-fluid-->
     </nav><!--end top navigation-->
 
@@ -53,7 +58,7 @@
             <div class="col-md-4" id="Instagram">
               <h5>Instagram Feed</h5>
               <div class="gallery-feed">
-                <img src="Blue-Wmn-Social.png">
+                <%= image_tag("Wms-Rocket.png", class: "img-responsive", alt: "Social Image", width: "50", height: "50") %>
               </div>
             </div>
             <div class="col-md-4" id="News">
@@ -78,5 +83,6 @@
           </div><!--end copyright-->
       </div><!--end header-->
     </footer>
+
   </body>
 </html>
