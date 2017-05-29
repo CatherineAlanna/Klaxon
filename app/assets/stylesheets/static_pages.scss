@@ -7,19 +7,22 @@ $primary-color: #a57777;
 $background-color: #3C4858;
 
 body {
-	background-color: lightgrey;
+	background-color: white;
 	color: #333333;
-	padding-top: 90px;
+	padding-left: 33px;
+	padding-right: 33px;
 	display: block;
 	text-rendering: optimizeLegibility;
+	margin: 0;
 }
 
-.navbar {
-		position: relative;
+.navbar-inverse {
+		position: absolute;
 		background-color: white;
-		box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
-		height: 70px;
-		position: fixed;
+		height: 50px;
+		width: auto;
+		text-align: left;
+		border-color: white;
 
 	ul li {
 		font-size: 1.5em;
@@ -27,35 +30,36 @@ body {
 	}
 }
 
-.projectName a:hover {
-	color: black;
-	text-decoration: none;
+.brand {
+	margin: 20px 0 20px;
+	width: auto;
 }
 
-.navbar-inverse {
-		border-color: white;
-	}
+.navbar .header {
+	color: black;
+}
+
+#main-nav {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	padding-bottom: 0;
+	width: auto;
+}
 
 .navbar-inverse .navbar-nav li a {
 	color: #777;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.projectName {
-		font-size: 2em;
-		text-decoration: none;
-		padding-top: 20px;
-	}
-
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: black;
-    background-color: transparent;
+.navbar-inverse .navbar-nav li a:hover {
+	color: black;
 }
 
-.projectName a {
-	color: #777;}
-
-
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: black;
+}
 
 footer {
 	padding: 30px;
@@ -101,4 +105,8 @@ footer {
 
 .content ul li a {
 	color: white;
+}
+
+.copyright {
+	padding-right: 30px;
 }
