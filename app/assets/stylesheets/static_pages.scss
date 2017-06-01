@@ -17,7 +17,8 @@ body {
 }
 
 .navbar-inverse {
-		position: absolute;
+		position: static;
+		z-index: 1;
 		background-color: white;
 		height: 50px;
 		width: auto;
@@ -28,6 +29,10 @@ body {
 		font-size: 1.5em;
 		text-transform: uppercase;
 	}
+}
+
+.navbar .navbar-inverse {
+	padding-bottom: 30px;
 }
 
 .brand {
@@ -45,6 +50,8 @@ body {
 	border-bottom-color: black;
 	padding-bottom: 0;
 	width: auto;
+	margin-bottom: 30px;
+	padding-top: 20px;
 }
 
 #top-nav {
