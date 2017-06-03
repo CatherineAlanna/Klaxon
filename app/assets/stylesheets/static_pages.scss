@@ -42,6 +42,7 @@ body {
 
 .navbar .header {
 	color: black;
+	z-index: 1;
 }
 
 #main-nav {
@@ -52,10 +53,6 @@ body {
 	width: auto;
 	margin-bottom: 30px;
 	padding-top: 20px;
-}
-
-#top-nav {
-	z-index: 1;
 }
 
 .navbar-inverse .navbar-nav li a {
