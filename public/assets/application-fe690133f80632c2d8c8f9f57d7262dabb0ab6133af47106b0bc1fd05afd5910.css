@@ -1,0 +1,286 @@
+/* line 1, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/landing_pages.scss */
+.carousel-slide {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* line 6, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/landing_pages.scss */
+.carousel-indicators li {
+  border-color: black;
+  background-color: black;
+}
+
+/* line 11, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/landing_pages.scss */
+.carousel-caption {
+  color: black;
+}
+
+/* line 15, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/landing_pages.scss */
+.carousel-inner .item img {
+  display: block;
+  margin: auto;
+}
+/* line 1, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/products.scss */
+#products {
+  padding-bottom: 30px;
+  margin-bottom: 33px;
+}
+
+/* line 6, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/products.scss */
+h1 {
+  padding-top: 20px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 13, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/products.scss */
+#notice {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+/* line 1, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 34, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 38, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 43, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 48, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 52, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 58, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 65, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 75, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 81, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 1, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: white;
+  color: #333333;
+  padding-left: 33px;
+  padding-right: 33px;
+  display: block;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+
+/* line 19, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+#top-nav {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 24, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse {
+  position: static;
+  z-index: 1;
+  background-color: white;
+  height: 50px;
+  width: auto;
+  text-align: left;
+  border-color: white;
+}
+/* line 33, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse ul li {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+/* line 39, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar .navbar-inverse {
+  padding-bottom: 30px;
+}
+
+/* line 43, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.brand {
+  margin: 20px 0 20px;
+  width: auto;
+}
+
+/* line 48, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar .header {
+  color: black;
+  z-index: 1;
+}
+
+/* line 53, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+#main-nav {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  padding-bottom: 0;
+  width: auto;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+/* line 63, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav li a {
+  color: #777;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 69, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav li a:hover {
+  color: black;
+}
+
+/* line 73, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+/* line 77, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+footer {
+  padding: 30px;
+  background-color: #3C4858;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+/* line 86, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 92, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+footer ul li a {
+  padding: 15px 15px 15px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 100, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+footer ul li a:hover {
+  color: black;
+  text-decoration: none;
+}
+/* line 105, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+footer .submit_button {
+  color: #3C4858;
+  font-weight: 400;
+}
+/* line 110, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+footer .validate_email {
+  padding-left: 5px;
+}
+
+/* line 115, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.content ul li {
+  display: inline-block;
+}
+
+/* line 119, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.content ul li a {
+  color: white;
+}
+
+/* line 123, /Users/catiecharnock/Desktop/Klaxon/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  padding-right: 30px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
