@@ -1,3 +1,5 @@
+/*General*/
+
 * {
 	box-sizing: border-box;
 }
@@ -15,6 +17,8 @@ body {
 	text-rendering: optimizeLegibility;
 	margin: 0;
 }
+
+/*Navigation*/
 
 #top-nav {
 	margin-bottom: 20px;
@@ -74,7 +78,65 @@ body {
   background-color: black;
 }
 
+/*Carousel*/
+
+.carousel-inner {
+	background-color: grey;
+}
+
+.carousel-caption {
+	font-size: 70px;
+	line-height: 85%;
+	text-rendering: optimizeLegibility;
+	text-align: left;
+	text-transform: uppercase;
+	right: 5%;
+	left: 55%;
+	top: 30%;
+	text-shadow: none;
+	display: inline;
+}
+
+.carousel-control {
+	background-image: none !important;
+	text-shadow: none;
+	color: black;
+	opacity: 100;
+	width: 7%;
+}
+
+.carousel-control:hover, .carousel-control-focus {
+	background-color: rgba(0,0,0,0);
+	color: black;
+	opacity: 100;
+}
+
+.carousel-inner > .item > a > img {
+	width: 50%; 
+}
+
+.carousel-indicators {
+	bottom: -30px;
+}
+
+.carousel-indicators > li {
+	border: 0;
+	border-radius: 0;
+	background-color: #999;
+	width: 12px;
+	height: 12px;
+	margin: 0;
+}
+
+.carousel-indicators > .active {
+	background-color: #000;
+}
+
+
+/*Footer*/
+
 footer {
+	margin-top: 30px;
 	padding: 30px;
 	background-color: $background-color;
 	color: white;

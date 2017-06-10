@@ -7,9 +7,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +15,9 @@
 
   <body>
     <div class="container" id="top-nav">
+      <%= image_tag("Klaxon-Logo.png", class: "img-responsive", alt: "Klaxon Logo") %></a>
       <nav class="navbar navbar-inverse">
-        <div class="container" id="top-nav">
-          <%= image_tag("Klaxon-Logo.png", class: "img-responsive", alt: "Klaxon Logo") %>
+        <div>
           <div class="navbar-header" id="hamburger">
             <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle Navigations</span>
@@ -31,60 +28,53 @@
           </div><!--end hamburger-->
 
           <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="nav navbar-nav navbar-left" id="nav-links">
-              <li id="Mens">
-                <a href="#">Mens</a>
-              </li>
-              <li id="Womens">
-                <a href="#">Womens</a>
-              </li>
-              <li id="Goods">
-                <a href="#">Goods</a>
-              </li>
+            <ul class="nav navbar-nav" id="nav-links">
+              <li id="Products"><%= link_to 'Products', products_path %></li>
+              <li id="About"><%= link_to 'About', static_pages_about_path %></li>
+              <li id="Contact"><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
           </div><!--end main nav-->
-        </div><!--end container-fluid-->
+        </div><!--end -->
       </nav><!--end top navigation-->
-    </div>
 
-    <%= yield %>
+      <%= yield %>
 
-    <footer>
-      <div class="container" id="header">
-        <div class="content">
-          <div class="row">
-            <div class="col-md-4" id="Social">
-              <h5>Get Social</h5>
-              <p>Facebook Instagram Pinterest</p>
-            </div>
-            <div class="col-md-4" id="Instagram">
-              <h5>Instagram Feed</h5>
-              <div class="gallery-feed">
-                <%= image_tag("Wms-Rocket.png", class: "img-responsive", alt: "Social Image", width: "50", height: "50") %>
+      <footer>
+        <div class="container" id="header">
+          <div class="content">
+            <div class="row">
+              <div class="col-md-4" id="Social">
+                <h5>Get Social</h5>
+                <p>Facebook Instagram Pinterest</p>
               </div>
-            </div>
-            <div class="col-md-4" id="News">
-              <h5>Get the Newsletter</h5>
-              <p>We promise to only send exciting things.</p>
-              <form id="email_signup_footer">
-                <input type="email" name="email" class="validate_email" placeholder="your email address">
-                <button type="submit" class="submit_button">Sign Up</button>
-              </form>
-            </div>
-          </div><!--end row-->
-          <hr>
-          <ul class="navigation pull-left">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!--end content-->
-          <div class="copyright pull-right">
-            &copy; 2017 Klaxon
-          </div><!--end copyright-->
-      </div><!--end header-->
-    </footer>
-
+              <div class="col-md-4" id="Instagram">
+                <h5>Instagram Feed</h5>
+                <div class="gallery-feed">
+                  <%= image_tag("Wms-Rocket.png", class: "img-responsive", alt: "Social Image", width: "50", height: "50") %>
+                </div>
+              </div>
+              <div class="col-md-4" id="News">
+                <h5>Get the Newsletter</h5>
+                <p>We promise to only send exciting things.</p>
+                <form id="email_signup_footer">
+                  <input type="email" name="email" class="validate_email" placeholder="your email address">
+                  <button type="submit" class="submit_button">Sign Up</button>
+                </form>
+              </div>
+            </div><!--end row-->
+            <hr>
+            <ul class="navigation pull-left">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div><!--end content-->
+            <div class="copyright pull-right">
+              &copy; 2017 Klaxon
+            </div><!--end copyright-->
+        </div><!--end header-->
+      </footer>
+    </div>
   </body>
 </html>
