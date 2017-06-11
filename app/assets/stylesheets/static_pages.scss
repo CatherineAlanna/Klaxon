@@ -20,11 +20,6 @@ body {
 
 /*Navigation*/
 
-#top-nav {
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-}
-
 .navbar-inverse {
 		position: static;
 		z-index: 1;
@@ -33,15 +28,13 @@ body {
 		width: auto;
 		text-align: left;
 		border-color: white;
+		margin-bottom: 40px;
+		padding-bottom: 20px;
 
 	ul li {
 		font-size: 1.5em;
 		text-transform: uppercase;
 	}
-}
-
-.navbar .navbar-inverse {
-	padding-bottom: 30px;
 }
 
 .brand {
@@ -67,7 +60,7 @@ body {
 .navbar-inverse .navbar-nav li a {
 	color: #777;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 .navbar-inverse .navbar-nav li a:hover {
@@ -76,6 +69,30 @@ body {
 
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: black;
+}
+
+/*Search Box*/
+
+#search-box {
+	margin-bottom: -5px;
+	padding-bottom: 15px; 
+	margin-top: 10px;
+	margin-left: 70%;
+}
+
+input[type=search] {
+	font-family: $font-stack;
+	padding-left: 5px;
+	border-radius: 5px;
+	height: 30px;
+}
+
+input[type=submit] {
+	font-family: $font-stack;
+	border-radius: 5px;
+	text-transform: uppercase;
+	height: 30px;
+	padding-bottom: 5px;
 }
 
 /*Carousel*/
@@ -161,6 +178,7 @@ body {
 	color: black;
 }
 
+
 /*Footer*/
 
 footer {
@@ -200,6 +218,10 @@ footer {
 	.validate_email {
 		padding-left: 5px;
 	}
+}
+
+#header {
+	width: 1080px;
 }
 
 .content ul li {

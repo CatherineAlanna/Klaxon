@@ -15,7 +15,7 @@
 
   <body>
     <div class="container">
-      <%= image_tag("Klaxon-Logo.png", class: "img-responsive", alt: "Klaxon Logo") %></a>
+      <%= link_to image_tag("Klaxon-Logo.png", class: "img-responsive", alt: "Klaxon Logo"), root_path %>
       <nav class="navbar navbar-inverse">
         <div>
           <div class="navbar-header" id="hamburger">
@@ -33,6 +33,13 @@
               <li id="About"><%= link_to 'About', static_pages_about_path %></li>
               <li id="Contact"><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
+
+            <div class="form-inline form-group" role="search" id="search-box">
+              <%= form_tag("/products", method: "get") do %>
+                <%= search_field_tag(:q, "Search", class: "form-control") %>
+                <%= submit_tag("Search", class: "btn btn-default") %>
+              <% end %><!--end search box-->
+            </div><!--end search form-->
           </div><!--end main nav-->
         </div><!--end -->
       </nav><!--end top navigation-->
