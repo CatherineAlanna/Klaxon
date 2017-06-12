@@ -21,8 +21,8 @@ body {
 /*Navigation*/
 
 .navbar-inverse {
-		position: static;
-		z-index: 1;
+		position: relative;
+		z-index: 9999;
 		background-color: white;
 		height: 50px;
 		width: auto;
@@ -44,10 +44,10 @@ body {
 
 .navbar .header {
 	color: black;
-	z-index: 1;
 }
 
 #main-nav {
+  background-color: white;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: black;
@@ -182,7 +182,7 @@ input[type=submit] {
 /*Footer*/
 
 footer {
-	margin-top: 30px;
+  margin-top: 30px;
 	padding: 30px;
 	background-color: $background-color;
 	color: white;
