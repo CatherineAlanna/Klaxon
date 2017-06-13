@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-class User < ApplicationRecord
-=======
 # frozen_string_literal: true.
 # User
-class User < ActiveRecord::Base
+class User < ApplicationRecord
   has_many :orders
->>>>>>> master
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
