@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+<<<<<<< HEAD
 //= require_tree .
+=======
+//= require_tree .
+//= require rails-ujs
+>>>>>>> master

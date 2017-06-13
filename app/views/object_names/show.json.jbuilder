@@ -1,1 +1,1 @@
-json.partial! "object_names/object_name", object_name: @object_name
+json.partial! 'object_names/object_name', object_name: @object_name

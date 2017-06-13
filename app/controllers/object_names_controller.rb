@@ -1,3 +1,4 @@
+# Object Names Controller
 class ObjectNamesController < ApplicationController
   before_action :set_object_name, only: [:show, :edit, :update, :destroy]
 
@@ -9,8 +10,7 @@ class ObjectNamesController < ApplicationController
 
   # GET /object_names/1
   # GET /object_names/1.json
-  def show
-  end
+  def show; end
 
   # GET /object_names/new
   def new
@@ -18,8 +18,7 @@ class ObjectNamesController < ApplicationController
   end
 
   # GET /object_names/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /object_names
   # POST /object_names.json
@@ -62,13 +61,14 @@ class ObjectNamesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_object_name
-      @object_name = ObjectName.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def object_name_params
-      params.fetch(:object_name, {})
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_object_name
+    @object_name = ObjectName.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def object_name_params
+    params.fetch(:object_name, {})
+  end
 end
