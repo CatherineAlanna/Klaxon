@@ -71,13 +71,33 @@ body {
   background-color: black;
 }
 
+/*Login Signup*/
+
+#form-register {
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.form-signup {
+	max-width: 380px;
+	heigh: auto;
+	padding: 15px 35px 45px;
+	margin: 0 auto;
+	background-color: #eee;
+	border: 1px solid rgba(0,0,0,0.1);
+
+	.form-signup-heading {
+		text-align: center;
+	}
+}
+
 /*Search Box*/
 
 #search-box {
 	margin-bottom: -5px;
 	padding-bottom: 15px; 
 	margin-top: 10px;
-	margin-left: 70%;
+	margin-left: 60%;
 }
 
 input[type=search] {
