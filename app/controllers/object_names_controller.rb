@@ -1,3 +1,4 @@
+# frozen_string_literal: true.
 # Object Names Controller
 class ObjectNamesController < ApplicationController
   before_action :set_object_name, only: [:show, :edit, :update, :destroy]

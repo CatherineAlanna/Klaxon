@@ -1,3 +1,5 @@
+# frozen_string_literal: true.
+# User Controller
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
@@ -60,14 +62,18 @@ class UsersController < ApplicationController
   end
 
   private
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> master
     # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
+  def set_user
+    @user = User.find(params[:id])
+  end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.require(:user).permit(:first_name, :last_name)
-    end
+  def user_params
+    params.require(:user).permit(:first_name, :last_name)
+  end
 end

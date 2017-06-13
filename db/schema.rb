@@ -10,11 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170612224627) do
 
   create_table "object_names", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+=======
+ActiveRecord::Schema.define(version: 20170606003149) do
+  create_table 'object_names', force: :cascade do |t|
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+>>>>>>> master
   end
 
   create_table 'orders', force: :cascade do |t|
