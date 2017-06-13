@@ -1,7 +1,8 @@
+# frozen_string_literal: true.
 # Static Page Controller
 class StaticPagesController < ApplicationController
   def landing_page
-	  @products = Product.limit(3)
+    @products = Product.limit(3)
   end
 
   def index; end
