@@ -8,4 +8,6 @@ class OrdersController < ApplicationController
   def create; end
 
   def destroy; end
+
+  before_action :authenticate_user!
 end
