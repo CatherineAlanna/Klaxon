@@ -37,7 +37,7 @@
 
     <div class="field">
       <%= form.label :price %>
-      <%= form.text_field :price %>
+      <%= number_to_currency(@product.price) %>
     </div>
 
     <br>
