@@ -35,6 +35,16 @@
               <li id="Contact"><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
 
+            <ul class="nav pull-right">
+              <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+              </li>
+            </ul>
+
             <div class="form-inline form-group" role="search" id="search-box">
               <%= form_tag("/products", method: "get") do %>
                 <%= search_field_tag(:q, "Search", class: "form-control") %>
@@ -44,6 +54,14 @@
           </div><!--end main nav-->
         </div><!--end -->
       </nav><!--end top navigation-->
+
+      <% if notice %>
+        <p id="notice" class="alert alert-info"><%= notice %></p>
+      <% end %>
+
+      <% if alert %>
+        <p id="alert" class="alert alert-danger"><%= alert %></p>
+      <% end %>
 
       <%= yield %>
 

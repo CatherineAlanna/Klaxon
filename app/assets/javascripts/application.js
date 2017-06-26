@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require_tree .
 //= require rails-ujs
+$(document).on('turbolinks:load', function(){ //fade out alerts
+  console.log($(".alert"));
+  $(".alert").delay(4000).fadeOut("slow");
+});
