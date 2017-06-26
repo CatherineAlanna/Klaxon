@@ -1,18 +1,14 @@
 /*General*/
 
-* {
-	box-sizing: border-box;
-}
-
 $font-stack: Roboto, Helvetica, Arial, sans-serif;
 $primary-color: #a57777;
 $background-color: #3C4858;
 
+
+
 body {
 	background-color: white;
 	color: #333333;
-	padding-left: 33px;
-	padding-right: 33px;
 	display: block;
 	text-rendering: optimizeLegibility;
 	margin: 0;
@@ -38,8 +34,9 @@ body {
 }
 
 .brand {
-	margin: 20px 0 20px;
+	margin-top: 20px;
 	width: auto;
+	padding-left: 15px;
 }
 
 .navbar .header {
@@ -70,6 +67,7 @@ body {
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: black;
 }
+
 
 /*Login Signup*/
 
@@ -117,6 +115,10 @@ input[type=submit] {
 
 /*Carousel*/
 
+#carousel-example-generic {
+	margin-bottom: 40px;
+}
+
 .carousel-inner {
 	background-color: grey;
 }
@@ -153,7 +155,7 @@ input[type=submit] {
 }
 
 .carousel-indicators {
-	bottom: -30px;
+	bottom: -40px;
 }
 
 .carousel-indicators > li {
@@ -202,8 +204,8 @@ input[type=submit] {
 /*Footer*/
 
 footer {
-  margin-top: 30px;
-	padding: 30px;
+	position: absolute;
+	width: 100%;
 	background-color: $background-color;
 	color: white;
 	font-size: 14px;
@@ -241,7 +243,8 @@ footer {
 }
 
 #header {
-	width: 1080px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .content ul li {

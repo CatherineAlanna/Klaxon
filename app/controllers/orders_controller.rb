@@ -9,5 +9,4 @@ class OrdersController < ApplicationController
 
   def destroy; end
 
-  before_action :authenticate_user!
 end

@@ -3,7 +3,7 @@
 
 	<%= render 'form', product: @product %>
 
-	<%= link_to 'Show', @product %> |
-	<%= link_to 'Back', products_path %> |
-	<%= link_to 'Destroy', product_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<button><%= link_to 'Show', @product %></button> |
+	<button><%= link_to 'Back', products_path %></button> |
+	<button><%= link_to 'Destroy', product_path, method: :delete, data: { confirm: 'Are you sure?' } %></button>
 </div>

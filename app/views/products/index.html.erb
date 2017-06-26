@@ -1,13 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="container" id="product-page">
+  <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+  <h1>Products</h1>
 
-<br>
+  <br>
 
-<%= link_to 'New Product', new_product_path %>
+  <button><%= link_to 'New Product', new_product_path %></button>
 
-<div class="container-fluid page_wrap">
-  <div class="row">
-    <%= render @products %>
+  <div class="container-fluid page_wrap">
+    <div class="row">
+      <%= render @products %>
+    </div>
   </div>
 </div>

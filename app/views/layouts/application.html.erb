@@ -16,8 +16,7 @@
   </head>
 
   <body>
-    <div class="container">
-      <%= link_to image_tag("Klaxon-Logo.png", class: "img-responsive", alt: "Klaxon Logo"), root_path %>
+      <%= link_to image_tag("Klaxon-Logo.png", class: "img-responsive brand", alt: "Klaxon Logo"), root_path %>
       <nav class="navbar navbar-inverse">
         <div>
           <div class="navbar-header" id="hamburger">
@@ -36,16 +35,6 @@
               <li id="Contact"><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
 
-            <ul class="nav pull-right">
-              <li>
-              <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-              <% else %>
-                <%= link_to('Login', new_user_session_path) %>
-              <% end %>
-              </li>
-            </ul>
-
             <div class="form-inline form-group" role="search" id="search-box">
               <%= form_tag("/products", method: "get") do %>
                 <%= search_field_tag(:q, "Search", class: "form-control") %>
@@ -56,12 +45,9 @@
         </div><!--end -->
       </nav><!--end top navigation-->
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
       <%= yield %>
 
-      <footer>
+      <footer class="footer">
         <div class="container" id="header">
           <div class="content">
             <div class="row">
@@ -97,6 +83,5 @@
             </div><!--end copyright-->
         </div><!--end header-->
       </footer>
-    </div>
   </body>
 </html>
