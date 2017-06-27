@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :users
   resources :products
-  resources :object_names
   resources :orders, only: [:index, :show, :create, :destroy]
   get 'static_pages/index'
 

@@ -54,9 +54,12 @@
           </div><!--end main nav-->
         </div><!--end -->
       </nav><!--end top navigation-->
-
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      
+      <% if notice %>
+        <p class="alert alert-info"><%= notice %></p>
+      <% else %>
+        <p class="alert alert-info"><%= alert %></p>
+      <% end %>
 
       <%= yield %>
 
