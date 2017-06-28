@@ -14,3 +14,14 @@ h1 {
 	padding-bottom: 30px;
 }
 
+#login.container, #signup.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 1320px;
+  top: 80px;
+  padding-bottom: 70px;
+}
+

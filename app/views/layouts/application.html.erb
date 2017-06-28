@@ -34,16 +34,14 @@
               <li id="About"><%= link_to 'About', static_pages_about_path %></li>
               <li id="Contact"><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul>
-
-            <ul class="nav pull-right">
-              <li>
+            <div class="pull-right" id="register">
               <% if user_signed_in? %>
-                <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                <%= link_to('Logout', destroy_user_session_path, method: :delete, :class=>"btn btn-warning btnLogin") %>
               <% else %>
-                <%= link_to('Login', new_user_session_path) %>
+                <%= link_to('Login', new_user_session_path, :class=>"btn btn-warning btnLogin") %>
+                <%= link_to('Sign up', new_user_registration_path, :class=>"btn btn-outline-warning btnRegister") %>
               <% end %>
-              </li>
-            </ul>
+            </div>
 
             <div class="form-inline form-group" role="search" id="search-box">
               <%= form_tag("/products", method: "get") do %>
@@ -55,10 +53,12 @@
         </div><!--end -->
       </nav><!--end top navigation-->
       
+      <!--Flash Notice Tags-->
       <% if notice %>
-        <p class="alert alert-info"><%= notice %></p>
-      <% else %>
-        <p class="alert alert-info"><%= alert %></p>
+        <div id="notice" class="alert alert-success"><%= notice %></div>
+      <% end %>
+      <% if alert %>
+        <div id="alert" class="alert alert-danger"><%= alert %></div>
       <% end %>
 
       <%= yield %>
