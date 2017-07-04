@@ -12,5 +12,5 @@ def highest_rating_comment
 end
 
 def lowest_rating_comment
-  comments.rating_desc.first
+  comments.rating_desc.last
 end
