@@ -10,9 +10,10 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <h1 class="product_title"><%= @product.name %></h1>
-        <p>Rating: 
-          <div class="rated" data-score="<%= @product.highest_rating_comment %>">
-          </div></p>
+        <p>
+          <div class="rated" id="rating" data-score="<%= @product.average_rating %>"> </div>
+          <% end %>
+        </p>
         <p class ="product_price">$<%= @product.price %></p>
         <p><%= @product.description %></p>
         <button><%= link_to 'Edit', edit_product_path(@product) %></button>
