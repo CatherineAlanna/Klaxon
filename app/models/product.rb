@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   has_many :orders
-  has_many :comments, dependent: :destory
+  has_many :comments
 end
 
 def self.search(search_term)
