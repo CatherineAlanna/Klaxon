@@ -1,16 +1,16 @@
 class Product < ApplicationRecord
   has_many :orders
   has_many :comments
-end
 
-def self.search(search_term)
+  def self.search(search_term)
   Product.where('name LIKE ?', "%#{search_term}%")
-end
+  end
 
-def highest_rating_comment
-  comments.rating_desc.first
-end
+  def highest_rating_comment
+    comments.rating_desc.first
+  end
 
-def lowest_rating_comment
-  comments.rating_desc.last
+  def lowest_rating_comment
+    comments.rating_desc.last
+  end
 end

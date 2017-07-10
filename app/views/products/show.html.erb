@@ -9,12 +9,11 @@
         <%= image_tag(@product.image_url, class: "img-responsive") %>
       </div>
       <div class="col-xs-12 col-sm-6">
+        <p><%= @product.highest_rating_comment %></p>
         <h1 class="product_title"><%= @product.name %></h1>
-        <p>
-          <div class="rated" id="rating" data-score="<%= @product.average_rating %>"> </div>
-        </p>
-        <p class ="product_price">$<%= @product.price %></p>
+        <p class ="product_price">$<%= number_to_currency(@product.price) %></p>
         <p><%= @product.description %></p>
+        <br>
         <button><%= link_to 'Edit', edit_product_path(@product) %></button>
       </div>
     </div>
