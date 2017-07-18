@@ -21,6 +21,8 @@
     </div>
   </div>
 </div>
-
-<%= render 'new_comment' %>
-<%= render 'comments' %>
+<div class="reviews">
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
+  <%= will_paginate @comments, class: 'text-center' %>
+</div>
