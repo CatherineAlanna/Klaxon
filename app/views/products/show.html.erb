@@ -13,7 +13,7 @@
         <p>Average Rating: 
           <div class="rated" data-score="<%= @product.average_rating %>"></div>
         </p>
-        <p class ="product_price">$<%= @product.price %></p>
+        <p class ="product_price"><%= number_to_currency(@product.price) %></p>
         <p><%= @product.description %></p>
         <br>
         <button><%= link_to 'Edit', edit_product_path(@product) %></button>
