@@ -36,6 +36,7 @@ gem 'cancancan', '~> 1.10'
 gem 'devise'
 # Use will_paginate for pagination
 gem 'will_paginate', '~> 3.1.0'
+gem 'rails-controller-testing'
 
 group :production do
   gem 'pg'
