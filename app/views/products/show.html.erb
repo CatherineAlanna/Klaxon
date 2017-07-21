@@ -16,6 +16,10 @@
         <p class ="product_price"><%= number_to_currency(@product.price) %></p>
         <p><%= @product.description %></p>
         <br>
+        <%= form_with(url: '/payments/create') do |form| %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+        <br>
         <button><%= link_to 'Edit', edit_product_path(@product) %></button>
       </div>
     </div>
