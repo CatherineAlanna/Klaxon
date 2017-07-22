@@ -8,8 +8,10 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q]
       @products = Product.where('name LIKE ?', "%#{search_term}%")
+      logger.debug "Product: #{@products}"
     else
       @products = Product.all
+      logger.debug "Product: #{@products}"
     end
   end
 
@@ -17,6 +19,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    logger.debug "Product: #{@products}"
   end
 
   # GET /products/new
