@@ -7,5 +7,4 @@
   data-amount="<%= @product.price * 100 %>">    
   </script>
 
-hidden field tag @product.id
-name = :product_id
+<%= hidden_field_tag(:product_id, @product.id) %>
