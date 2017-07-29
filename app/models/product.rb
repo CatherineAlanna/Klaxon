@@ -4,7 +4,8 @@ class Product < ApplicationRecord
   validates :name, presence:true
 
   def self.search(search_term)
-  Product.where('name LIKE ?', "%#{search_term}%")
+    like_operator = Rails.env.development? ? 'like' : 'ilike'
+    Product.where("name #{like_operator} ?", "%#{search_term}%")
   end
 
   def highest_rating_comment
@@ -12,7 +13,7 @@ class Product < ApplicationRecord
   end
 
   def lowest_rating_comment
-    comments.rating_desc.last
+    comments.order(:rating)
   end
 
   def average_rating
@@ -20,10 +21,10 @@ class Product < ApplicationRecord
   end
 
   def views
-    $redis.get("product:#{id}")
+    redis.get("product:#{id}")
   end
 
   def viewed!
-    $redis.incr("product:#{id}")
+    redis.incr("product:#{id}")
   end
 end

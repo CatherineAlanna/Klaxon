@@ -1,26 +1,20 @@
 # Products Controller
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:show, :index]
 
   # GET /products
   # GET /products.json
   def index
-    if params[:q]
-      search_term = params[:q]
-      @products = Product.where('name LIKE ?', "%#{search_term}%")
-      logger.debug "Product: #{@products}"
-    else
-      @products = Product.all
-      logger.debug "Product: #{@products}"
-    end
+    @products = params[:q].present? ? Product.search(params[:q]) : Product.all
+    @products = @products.paginate(page: params[:page], per_page: 6)
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    logger.debug "Product: #{@products}"
-    @product.viewed!
     @comments = @product.comments.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
+    @product.viewed!
   end
 
   # GET /products/new
@@ -35,6 +29,8 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    logger.debug "Product: #{@product.name}"
+
 
     respond_to do |format|
       if @product.save
