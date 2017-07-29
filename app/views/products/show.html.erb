@@ -7,7 +7,6 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6">
         <%= image_tag(@product.image_url, class: "img-responsive img-zoom", data_zoom_image: "@product.image_url") %>
-        <h6 class="viewed">Views:<span class="badge"><%= @product.views %></span></h6>
       </div>
       <div class="col-xs-12 col-sm-6">
         <h1 class="product_title"><%= @product.name %></h1>
