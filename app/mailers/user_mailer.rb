@@ -16,6 +16,6 @@ class UserMailer < ApplicationMailer
 
   def order_placed(user, product)
     @user = user
-    mail(to: user.email, subject: "Your order of the #{product.name} has been placed.")
+    mail(to: user.email, subject: "Your order of the #{product.name} has been placed.").deliver_now
   end
 end
