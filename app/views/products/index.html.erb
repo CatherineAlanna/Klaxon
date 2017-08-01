@@ -4,8 +4,9 @@
   <h1>Products</h1>
 
   <br>
-
+  <% if current_user.admin? %>
   <button><%= link_to 'New Product', new_product_path %></button>
+  <% end %>
 
   <div class="container-fluid page_wrap">
     <div class="row">
