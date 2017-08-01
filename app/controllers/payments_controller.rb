@@ -16,6 +16,7 @@ def create
 
     if charge.paid
       Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
+      UserMailer.payment_confirmation(@user, @product).deliver_now
       flash[:notice] = "Your payment was processed successfully"
     end
 

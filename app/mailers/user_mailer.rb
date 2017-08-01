@@ -14,8 +14,9 @@ class UserMailer < ApplicationMailer
       subject: "Welcome to #{@appname}!")
   end
 
-  def order_placed(user, product)
+  def payment_confirmation(user, product)
     @user = user
+    @product - product
     mail(to: user.email, subject: "Your order of the #{product.name} has been placed.").deliver_now
   end
 end
